@@ -42,7 +42,7 @@ except ImportError:
 # Config
 # ---------------------------------------------------------------------------
 
-DEFAULT_CONFIG_PATH = Path.home() / ".pdf_to_mp3.json"
+DEFAULT_CONFIG_PATH = Path.home() / ".pp.json"
 
 def load_config(config_path: Path) -> dict:
     if config_path.exists():
