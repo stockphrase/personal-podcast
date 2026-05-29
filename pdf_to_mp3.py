@@ -304,7 +304,7 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description="Convert a PDF to MP3 using Piper TTS with smart cleaning."
     )
-    parser.add_argument("input", help="Input PDF file")
+    parser.add_argument("input", nargs="?", help="Input PDF file")
     parser.add_argument("--model", help="Path to Piper .onnx voice model")
     parser.add_argument("--output", help="Output MP3 path")
     parser.add_argument("--config", default=str(DEFAULT_CONFIG_PATH),
